@@ -1,1 +1,1 @@
-include "myretail-elastic-api"
+include "myretail-jest-common"

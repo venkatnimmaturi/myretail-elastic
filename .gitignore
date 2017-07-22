@@ -5,3 +5,9 @@ myretail-elastic-api/.settings/gradle/org.springsource.ide.eclipse.gradle.core.p
 myretail-elastic-api/.project
 myretail-elastic-api/.gitignore
 myretail-elastic-api/.classpath
+myretail-jest-common/.settings/org.eclipse.wst.common.project.facet.core.xml
+myretail-jest-common/.settings/org.eclipse.jdt.core.prefs
+myretail-jest-common/.settings/gradle/org.springsource.ide.eclipse.gradle.refresh.prefs
+myretail-jest-common/.settings/gradle/org.springsource.ide.eclipse.gradle.core.prefs
+myretail-jest-common/.classpath
+myretail-jest-common/.project
