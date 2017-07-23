@@ -11,3 +11,16 @@ myretail-jest-common/.settings/gradle/org.springsource.ide.eclipse.gradle.refres
 myretail-jest-common/.settings/gradle/org.springsource.ide.eclipse.gradle.core.prefs
 myretail-jest-common/.classpath
 myretail-jest-common/.project
+/build/
+/bin/
+.settings/org.eclipse.jdt.core.prefs
+.settings/gradle/org.springsource.ide.eclipse.gradle.core.prefs
+.settings/gradle/org.springsource.ide.eclipse.gradle.core.import.prefs
+.project
+.gradle/2.2.1/taskArtifacts/taskArtifacts.bin
+.gradle/2.2.1/taskArtifacts/outputFileStates.bin
+.gradle/2.2.1/taskArtifacts/fileSnapshots.bin
+.gradle/2.2.1/taskArtifacts/fileHashes.bin
+.gradle/2.2.1/taskArtifacts/cache.properties.lock
+.gradle/2.2.1/taskArtifacts/cache.properties
+.classpath
