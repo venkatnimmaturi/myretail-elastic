@@ -1,12 +1,14 @@
 package myretail.jest.client.api.impl;
 
+import myretail.jest.client.api.ElasticsearchApiCommand;
 import myretail.jest.client.api.request.ApiRequest;
 import myretail.jest.client.api.response.ApiResponse;
 import myretail.jest.client.call.request.ElasticsearchCallRequest;
 import myretail.jest.client.call.response.ElasticsearchCallResponse;
 import myretail.jest.client.hystrix.JestHystrixCommand;
 
-public abstract class AbstractElasticsearchApiCommand<REQ extends ElasticsearchCallRequest, RESP extends ElasticsearchCallResponse, APIREQ extends ApiRequest, APIRESP extends ApiResponse> {
+public abstract class AbstractElasticsearchApiCommand<REQ extends ElasticsearchCallRequest, RESP extends ElasticsearchCallResponse, APIREQ extends ApiRequest, APIRESP extends ApiResponse>
+		implements ElasticsearchApiCommand<APIREQ, APIRESP> {
 
 	protected JestHystrixCommand<REQ, RESP> hystrixCommand;
 
@@ -21,6 +23,7 @@ public abstract class AbstractElasticsearchApiCommand<REQ extends ElasticsearchC
 		this.hystrixCommand = hystrixCommand;
 	}
 
+	@Override
 	public APIRESP execute(APIREQ apiRequest) {
 
 		REQ callRequest = preProcess(apiRequest);

@@ -9,9 +9,14 @@ import lombok.Setter;
 @Getter
 @Setter
 @Component
-@ConfigurationProperties("myretail.elasticsearch")
+@ConfigurationProperties("myretail.elasticsearch.properties")
 public class ElasticsearchProperties {
 
 	private String indexName = "";
-	private int typeName;
+	private String typeName;
+	private String serverUri;
+	private int idleTimeout;
+	private int maxConnections;
+	private int connectionTimeout;
+
 }

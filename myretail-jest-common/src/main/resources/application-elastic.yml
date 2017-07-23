@@ -1,0 +1,9 @@
+myretail:
+  elasticsearch:
+    properties:
+      indexName: products
+      typeName: product
+      serverUri: http://localhost:9200
+      idleTimeout: 25
+      maxConnections: 4
+      connectionTimeout: 30000
